@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Proses</title>
+    <style>
+      body {
+        background-image: url("gambar/bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+      }
+      #congratsText {
+        display: none;
+        color: white;
+      }
+
+      #container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Proses</h1>
+    <a href="index.html">Beranda</a> | <a href="servis.html">Servis</a> |
+    <a href="portofolio.html">Portofolio</a> |
+    <a href="kontak.html">Kontak</a> |
+    <br/>
+
+    <div id="container">
+ 
+      <img src="gambar/loading.gif" alt="Loading GIF" id="loadingGif" />
+      <h1 id="congratsText" style="display: none"></h1>
+    </div>
+    <script>
+
+      const params = new URLSearchParams(window.location.search);
+
+      const loadingGif = document.getElementById("loadingGif");
+ 
+      const congratsText = document.getElementById("congratsText");
+
+  
+      congratsText.innerHTML = `P selamat jadi temen, halo ${params.get(
+        "nama"
+      )}`;
+
+      setTimeout(function () {
+        loadingGif.style.display = "none";
+        congratsText.style.display = "block";
+      }, 3000);
+    </script>
+  </body>
+</html>

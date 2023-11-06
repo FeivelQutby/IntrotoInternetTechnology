@@ -1,0 +1,64 @@
+body {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+#logo {
+    font-family: "Comic Sans MS";
+    color: tomato;
+    text-shadow: 2px 2px 2px #000;
+}
+
+ul#nav {
+    margin: 0;
+    padding: 0;
+}
+
+ul#nav li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul#nav li a {
+    text-decoration: none;
+    padding: 10px 0;
+    color: deeppink;
+    font-weight: bold;
+}
+
+ul#nav li a:hover {
+    color: tomato;
+    border-bottom: 3px solid tomato;
+}
+
+ul li img.image-hover:hover {
+    border: 2px solid deeppink;
+}
+
+button[type="submit"] {
+    font-weight: bold;
+    background-color: pink;
+    color: deeppink;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: hotpink;
+}
+
+#nama {
+    background-color: yellow;
+}
+
+.portfolio-image {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px deeppink;
+}
