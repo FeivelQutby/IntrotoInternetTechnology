@@ -1,0 +1,23 @@
+.Container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Text-Center{
+  text-align: center;
+  color: aliceblue;
+}
+
+.Font-Black{
+  text-align: center;
+  color: black;
+}
+
+.Card{
+  width: 500px;
+  padding: 3rem;
+  margin: 3rem;
+  border-radius: 5rem;  
+  background-color: darkslategray;
+}
