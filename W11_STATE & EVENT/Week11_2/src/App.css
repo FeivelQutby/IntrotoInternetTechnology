@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  color: #f3fbfb;
+}
+
+body{
+  background-color: #384a56;
+}
+
+.button{
+  background-color: #6cbf91;
+  padding:1rem;
+  color: #ffffff;
+  border: none;
+}
